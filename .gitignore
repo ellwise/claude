@@ -1,0 +1,13 @@
+backups/
+file-history/
+hooks/
+ide/
+projects/
+session-env/
+sessions/
+shell-snapshots/
+telemetry/
+.credentials.json
+.last-cleanup
+mcp-needs-auth-cache.json
+settings.json
