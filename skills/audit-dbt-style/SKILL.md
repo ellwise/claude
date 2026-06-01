@@ -9,6 +9,8 @@ dbt's style guide treats naming, formatting, and tooling not as aesthetics but a
 
 ## Checklist
 
+- [ ] Read all dbt model files, YAML config, and Python models completely before starting — skim nothing.
+
 ### Models
 
 - [ ] **Model naming** — Models are not pluralized, or names use dots instead of underscores. Pluralize all model names (`customers`, not `customer`); use underscores instead of dots — dots map to `database.schema.object` on most platforms and force quoting.
@@ -45,4 +47,5 @@ dbt's style guide treats naming, formatting, and tooling not as aesthetics but a
 
 - [ ] **YAML formatting** — YAML uses indentation other than 2 spaces, lines exceed 80 characters, or files are not formatted with a validator. Use 2-space indentation; indent list items; keep lines under 80 characters; run Prettier (or the dbt Studio IDE YAML formatter) to enforce these rules automatically.
 
-- [ ] Print a severity-ordered summary of all findings, grouped under the section where each violation occurs (Models, SQL, Python, Jinja, YAML).
+- [ ] Before reporting: review each finding for conflicting forces (would fixing this create a different problem?) and significance (is this too marginal to act on?). Aim to converge — discard advice that churns rather than converges.
+- [ ] Report each finding in plain language: what's wrong, which section it's in (Models, SQL, Python, Jinja, YAML), and specific steps to fix it; order by severity. Offer to dig deeper on any finding.

@@ -24,11 +24,13 @@ Each checklist item encodes a signal → action pair from the theory. Because th
 
 Draft the full checklist in one pass for well-known theories; for obscure or proprietary ones, confirm checklist items before writing.
 
+- [ ] First item: read the artefact completely before starting — skim nothing.
 - [ ] Each item: `**Label** — "verbatim signal." Fix instruction (imperative, one sentence).`
 - [ ] Aim for a handful of items; consolidate or push content to the reference file if the count exceeds this.
 - [ ] Add `###` subheadings only when the framework itself names the groupings — use its own vocabulary for the heading text, never an imposed editorial structure. Items without a natural grouping stay flat.
 - [ ] No prose between items — restrict non-item content to the frontmatter, the one-liner, any finding-labels block, and subheadings from the framework's own vocabulary.
-- [ ] Make the final item always the summary report step.
+- [ ] Second-to-last item: a convergence check — review each finding for conflicting forces and significance; discard advice that churns rather than converges.
+- [ ] Final item: summary in plain language — each finding with what's wrong and specific steps to fix it, ordered by severity, with an offer to dig deeper.
 
 ### 3. Draft reference file (if agreed)
 
@@ -48,7 +50,9 @@ Draft the full checklist in one pass for well-known theories; for obscure or pro
 - [ ] Item count is acceptable; flag to user if greater than a handful.
 - [ ] Checklist items encode observable signals (not vague instructions).
 - [ ] Every finding label used in the checklist appears in the reference file glossary (if one exists); every entry in the reference file is either unknown to the LLM or a distinction it predictably blurs — remove any entry that restates what the LLM already knows.
-- [ ] Final checklist item must be the summary report step.
+- [ ] First checklist item instructs reading the artefact completely before starting.
+- [ ] Second-to-last item is a convergence check: reviews findings for conflicting forces and significance.
+- [ ] Final item: plain-language summary with a remediation plan per finding, ordered by severity, with an offer to dig deeper — no framework jargon in the output.
 
 ## Output format
 

@@ -13,6 +13,8 @@ Martin's principles assume nominal typing and inheritance (OOP classes with meth
 
 ## Checklist
 
+- [ ] Read all package source files and trace their imports completely before starting — skim nothing.
+
 ### Cohesion principles — what belongs in a package
 
 - [ ] **Release Equivalence Principle (REP)** — Flag packages that mix stable utility modules (high fan-in, infrequently changed) with volatile domain modules (low fan-in, frequently changed); they cannot be released as a coherent unit. Split into a stable library package and a volatile application package.
@@ -24,4 +26,5 @@ Martin's principles assume nominal typing and inheritance (OOP classes with meth
 - [ ] **Acyclic Dependencies Principle (ADP)** — Walk the import graph and identify any strongly-connected components (2+ nodes). Extract a shared dependency package or invert a dependency to break each cycle; flag each as high severity.
 - [ ] **Stable Dependencies Principle (SDP)** — For each package, compute instability I = Fo / (Ca + Fo); flag any import edge where the depender has lower I than the dependee (a stable package depending on a volatile one). Move the volatile responsibility or introduce an abstracting interface.
 - [ ] **Stable Abstractions Principle (SAP)** — Examine each stable behavioral package (I < 0.3): count how many protocols and ABCs it defines versus concrete classes with methods. Skip data-schema packages—data structure definitions define their contract through structure, not abstraction. Flag stable packages that predominantly implement behavior rather than abstract it. **Severity:** Medium for library packages intended for reuse; low for internal application packages with controlled usage. Introduce protocols or ABCs so stable packages specify what must be done without dictating how to do it.
-- [ ] Print all findings ordered by severity: high (Acyclic Dependencies violations) → medium (Stable Dependencies, Stable Abstractions, Common Closure, Common Reuse violations) → low (Release Equivalence mismatches). End with: *"Which of these would you like to dig into?"*
+- [ ] Before reporting: review each finding for conflicting forces (would fixing this create a different problem?) and significance (is this too marginal to act on?). Aim to converge — discard advice that churns rather than converges.
+- [ ] Report findings in plain language, ordered by severity: high (Acyclic Dependencies violations) → medium (Stable Dependencies, Stable Abstractions, Common Closure, Common Reuse violations) → low (Release Equivalence mismatches). For each finding, state what's wrong and the specific steps to fix it. End with: *"Which of these would you like to dig into?"*

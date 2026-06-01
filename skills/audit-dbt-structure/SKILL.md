@@ -9,6 +9,8 @@ dbt holds that folder structure, naming, and materialization must trace the jour
 
 ## Checklist
 
+- [ ] Read all dbt model files, source YAML, and dbt_project.yml completely before starting — skim nothing.
+
 ### Staging
 
 - [ ] **Staging organization** — Staging models are not grouped by source system, or file names don't follow `stg_[source]__[entity]s.sql`. Group under `models/staging/[source_system]/` (never by loader or business grouping); name each file `stg_[source]__[entity]s.sql` — the double underscore distinguishes source from entity, and entity names are always plural.
@@ -57,4 +59,5 @@ dbt holds that folder structure, naming, and materialization must trace the jour
 
 - [ ] **Macros documentation** — Macros exist without a `_macros.yml` file documenting their purpose and arguments. Create `_macros.yml` in the `macros/` folder and document every macro's purpose and arguments before it goes into regular use.
 
-- [ ] Print a severity-ordered summary of all findings, grouped under the layer where each violation occurs (Staging, Intermediate, Marts, Project files).
+- [ ] Before reporting: review each finding for conflicting forces (would fixing this create a different problem?) and significance (is this too marginal to act on?). Aim to converge — discard advice that churns rather than converges.
+- [ ] Report each finding in plain language: what's wrong, which layer it's in (Staging, Intermediate, Marts, Project files), and specific steps to fix it; order by severity. Offer to dig deeper on any finding.

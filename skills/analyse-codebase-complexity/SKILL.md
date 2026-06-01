@@ -9,6 +9,8 @@ Ousterhout's framework identifies twelve named red flags that let complexity acc
 
 ## Checklist
 
+- [ ] Read all relevant source files completely before starting — skim nothing.
+
 ### Interface depth
 
 - [ ] **Shallow module** — "the benefit it provides is not much greater than the cost to learn or use it" (large interface, small functionality). Push more work inside; simplify the interface until the ratio inverts.
@@ -35,4 +37,5 @@ Ousterhout's framework identifies twelve named red flags that let complexity acc
 
 ### Summary
 
-- [ ] Print a severity-ordered summary of findings, labelling each with the red-flag name and the file/symbol where it appears.
+- [ ] Before reporting: review each finding for conflicting forces (would fixing this create a different problem?) and significance (is this too marginal to act on?). Aim to converge — discard advice that churns rather than converges.
+- [ ] Report each finding in plain language: the red-flag name, the file/symbol where it appears, and specific steps to fix it; order by severity. Offer to dig deeper on any finding.

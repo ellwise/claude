@@ -21,9 +21,11 @@ description: <"[Theory] holds that [core claim — stress position carries the c
 
 <!-- Use ### subheadings only when the framework itself names these groupings. -->
 
+- [ ] Read [domain artefact] completely before starting — skim nothing.
 - [ ] **Label** — "verbatim signal from the theory." Fix instruction (one sentence, imperative).
 - [ ] **Label** — ...
-- [ ] Print a summary ordered by severity.
+- [ ] Before reporting: review each finding for conflicting forces (would fixing this create a different problem?) and significance (is this too marginal to act on?). Aim to converge — discard advice that churns rather than converges.
+- [ ] Report findings in plain language: for each issue, state what's wrong and give specific steps to fix it; order by severity. Offer to dig deeper on any finding.
 ```
 
 **What belongs in SKILL.md vs a reference file:**

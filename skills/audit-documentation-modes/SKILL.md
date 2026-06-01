@@ -11,6 +11,8 @@ Use these terms exactly in findings: **conflation** (a page crosses or blurs the
 
 ## Checklist
 
+- [ ] Read the documentation set completely before starting — skim nothing.
+
 ### Classification
 
 - [ ] **Mode census** — "a page resists clear assignment to one of the four modes." Walk every page and assign a mode using the Compass: tutorials (action + acquisition), how-to guides (action + application), explanation (cognition + acquisition), reference (cognition + application). Flag any page that resists clear classification as a candidate for conflation or splitting.
@@ -31,4 +33,5 @@ Use these terms exactly in findings: **conflation** (a page crosses or blurs the
 
 - [ ] **Missing modes** — flag any of the four modes that has no coverage or only thin coverage; Procida notes tutorials in particular are often absent entirely. Propose page titles that would fill the gap.
 - [ ] **Navigation alignment** — navigation should make the four modes visually distinct so readers can orient themselves before opening any page. Flag navigation that mixes modes in a single group or uses labels that do not signal the mode.
-- [ ] Print a summary of findings grouped by mode, ordered by severity: missing modes → conflation and absorbing → shape failures → navigation.
+- [ ] Before reporting: review each finding for conflicting forces (would fixing this create a different problem?) and significance (is this too marginal to act on?). Aim to converge — discard advice that churns rather than converges.
+- [ ] Report findings in plain language, grouped by mode and ordered by severity: missing modes → conflation and absorbing → shape failures → navigation. For each finding, state what's wrong and specific steps to fix it. Offer to dig deeper on any finding.

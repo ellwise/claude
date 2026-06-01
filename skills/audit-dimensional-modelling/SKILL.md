@@ -9,6 +9,8 @@ Kimball's bus architecture requires one grain per fact table and conformed dimen
 
 ## Checklist
 
+- [ ] Read all schema definitions, fact tables, and dimension tables completely before starting — skim nothing.
+
 ### Fact Tables
 
 - [ ] **Fact table type** — "a fact table's structure is chosen without identifying whether the business process produces discrete events, regular period-end states, or tracked lifecycle instances." Classify as transaction (one row per event), periodic snapshot (one row per entity per period), or accumulating snapshot (one row per process instance with multiple milestone date stamps), then redesign accordingly.
@@ -36,4 +38,5 @@ Kimball's bus architecture requires one grain per fact table and conformed dimen
 - [ ] **Non-conformed facts** — "a shared business metric (e.g., revenue, headcount) is calculated differently in two or more subject-area schemas." Define a single enterprise-wide calculation for each shared metric, publish it in the bus matrix, and give any local variants a distinct name.
 - [ ] **Bus matrix absent** — "no enterprise data warehouse bus matrix documents which conformed dimensions apply to which business process fact tables." Build the bus matrix as a grid of business processes (rows) against conformed dimensions (columns) before schema sign-off.
 
-- [ ] Print a severity-ordered summary listing each finding by label, the affected table or schema, and the recommended fix.
+- [ ] Before reporting: review each finding for conflicting forces (would fixing this create a different problem?) and significance (is this too marginal to act on?). Aim to converge — discard advice that churns rather than converges.
+- [ ] Report each finding in plain language: label, affected table or schema, and specific steps to fix it; order by severity. Offer to dig deeper on any finding.

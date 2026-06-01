@@ -11,6 +11,7 @@ Use these terms exactly in findings: **complect**, **simple**, **easy**, **const
 
 ## Checklist
 
+- [ ] Read all relevant source files completely before starting — skim nothing.
 - [ ] **Easy mistaken for simple** — "construct justified on grounds of familiarity, convention, or framework support." To test whether it is also simple, apply Hickey's independence criterion: *could these concerns ever change for different reasons — would any caller ever need one without the other?* If the bundled concerns co-vary by definition (all facets of a single boundary or invariant), that is cohesion, not complecting. Flag only when genuinely independent concerns have been forced to travel together.
 - [ ] **State** — "mutable variable or field whose value changes over time." Replace with values.
 - [ ] **Objects** — "class or object bundles state, identity, and value together." Separate into values and functions.
@@ -24,4 +25,5 @@ Use these terms exactly in findings: **complect**, **simple**, **easy**, **const
 - [ ] **ORM** — "ORM layer braids the object model with the relational model." Replace with declarative data manipulation — SQL or Datalog.
 - [ ] **Scattered conditionals** — "policy or business rules encoded as conditionals spread across the system." Extract to a rule system or declarative configuration.
 - [ ] **Modularity mistaken for simplicity** — "system described as well-structured or modular while constructs within its units remain complected." Identify the complecting construct inside each unit; partitioning does not remove complecting.
-- [ ] Print a summary of findings ordered by severity, naming the construct, what it complects, and the simpler alternative.
+- [ ] Before reporting: review each finding for conflicting forces (would fixing this create a different problem?) and significance (is this too marginal to act on?). Aim to converge — discard advice that churns rather than converges.
+- [ ] Report findings in plain language, ordered by severity — for each, name the construct, what it complects, and the simpler alternative. Offer to dig deeper on any finding.

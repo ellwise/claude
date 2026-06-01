@@ -11,6 +11,8 @@ Use these terms exactly in findings: **type violation** (content of one type ins
 
 ## Checklist
 
+- [ ] Read all topics completely before starting — skim nothing.
+
 ### Classification
 
 - [ ] **Type census** — "a topic's content does not clearly align with one of the three core types." Walk every topic and assign an inferred type (task, concept, or reference); flag any topic that resists clear typing.
@@ -33,4 +35,5 @@ Use these terms exactly in findings: **type violation** (content of one type ins
 - [ ] **Title mismatch** — "a task topic title is not a verb phrase, or a concept or reference topic title is a verb phrase." Rename: task titles to verb phrases ('Configure the server'), concept and reference titles to noun phrases ('Server configuration', 'Configuration parameters').
 - [ ] **Shortdesc failure** — "a topic has no `<shortdesc>`, or the short description restates the title word for word." Write a 1–2 sentence `<shortdesc>` stating what the topic covers and who it is for.
 - [ ] **Scope overload** — "a topic addresses more than one distinct subject, or is fewer than three meaningful sentences with no referenced sibling topics." Split overloaded topics into typed children; flag stubs for expansion or removal.
-- [ ] Print a summary of all findings grouped by DITA topic type, ordered by severity.
+- [ ] Before reporting: review each finding for conflicting forces (would fixing this create a different problem?) and significance (is this too marginal to act on?). Aim to converge — discard advice that churns rather than converges.
+- [ ] Report findings in plain language, grouped by DITA topic type and ordered by severity. For each finding, state what's wrong and specific steps to fix it. Offer to dig deeper on any finding.

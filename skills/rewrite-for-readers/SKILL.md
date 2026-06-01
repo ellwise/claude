@@ -9,6 +9,8 @@ Williams holds that readers experience difficulty not from complex ideas but fro
 
 ## Checklist
 
+- [ ] Read the prose completely before starting — skim nothing.
+
 ### Clarity
 
 - [ ] **Actor-Subject** — The grammatical subject should be the real agent performing the action. Find every sentence where the subject is a concept, abstraction, or dummy pronoun while the real agent appears elsewhere; rewrite so the actor leads as subject.
@@ -49,4 +51,5 @@ Williams holds that readers experience difficulty not from complex ideas but fro
 
 - [ ] **Rhythm** — A sequence of sentences uniform in length and structure becomes monotonous; variety signals the relative weight of ideas. Find runs of sentences that are all short and choppy or all long and rolling; vary length and structure so the rhythm reflects the content's movement.
 
-- [ ] **Apply and report** — Write all rewrites to the file (or replace the selected text), then report each change grouped by issue type — Actor-Subject, Nominalization, Topic Position, Topic Consistency, Short Before Long, Issue Sentence, Stress Position, Redundancy, Metadiscourse, Sentence Length, Branching, Balance, Climax, Rhythm — with location and a one-line description of what changed.
+- [ ] Before applying changes: review each proposed rewrite for conflicting forces (would this change create a different problem elsewhere in the text?) and significance (is this too marginal to improve readability?). Aim to converge — discard changes that churn rather than converge.
+- [ ] **Apply and report** — Write all rewrites to the file (or replace the selected text), then report each change in plain language, grouped by issue type — Actor-Subject, Nominalization, Topic Position, Topic Consistency, Short Before Long, Issue Sentence, Stress Position, Redundancy, Metadiscourse, Sentence Length, Branching, Balance, Climax, Rhythm — with location and a one-line description of what changed. Offer to discuss any change further.
