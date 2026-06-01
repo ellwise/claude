@@ -5,7 +5,7 @@ description: "Diataxis holds that tutorial, how-to guide, explanation, and refer
 
 # Classify with Diataxis
 
-Procida's Compass maps documentation along two axes — action vs. cognition, and acquisition vs. application — placing the root of most documentation problems in the crossing of those boundaries.
+Procida's Compass maps documentation along two axes — action vs. cognition, and acquisition vs. application — and places the root of most documentation problems in the crossing of those boundaries.
 
 Use these terms exactly in findings: **conflation** (a page crosses or blurs the boundary between two modes — name both); **absorbing** (an explanation page that has absorbed instructional or reference content); **missing mode** (a mode with no or inadequate coverage in the set).
 

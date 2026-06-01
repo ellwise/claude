@@ -25,7 +25,7 @@ Ousterhout's framework identifies twelve named red flags that let complexity acc
 
 ### Naming
 
-- [ ] **Vague name** — "a name is so imprecise that it allows multiple interpretations." Rename to be precise enough that a wrong reading would require ignoring the word chosen.
+- [ ] **Vague name** — "a name is so imprecise that it allows multiple interpretations." Rename until no misreading survives without ignoring the word itself.
 - [ ] **Hard to pick name** — you cannot find a name that is both simple and precise. Treat this as a design signal: the concept itself may be poorly defined. Reconsider the interface or split the responsibility until a name comes easily.
 
 ### Comments

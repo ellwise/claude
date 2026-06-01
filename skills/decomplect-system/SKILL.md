@@ -5,7 +5,7 @@ description: Hickey's "Simple Made Easy" holds that complexity enters systems th
 
 # Decomplect System
 
-Following Rich Hickey's "Simple Made Easy" (Strange Loop, 2011), surfaces each instance of complecting — unnecessary braiding of concerns into a single construct — and names the simpler alternative.
+Surface each instance of complecting — the unnecessary braiding of concerns into a single construct — and name the simpler alternative, following Rich Hickey's "Simple Made Easy" (Strange Loop, 2011).
 
 Use these terms exactly in findings: **complect**, **simple**, **easy**, **construct**, **values**, **managed reference**, **polymorphism à la carte**, **queue**, **declarative**.
 

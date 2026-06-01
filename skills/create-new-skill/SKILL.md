@@ -5,7 +5,7 @@ description: Generate a new skill that applies a named theoretical framework ("s
 
 # Create New Skill
 
-Following the structure in [TEMPLATE.md](TEMPLATE.md), generate a Claude skill that applies a named analytical framework to a specific problem domain.
+Generate a Claude skill that applies a named analytical framework to a specific problem domain, following the structure in [TEMPLATE.md](TEMPLATE.md).
 
 ## Procedure
 

@@ -1,30 +1,52 @@
 ---
 name: rewrite-for-readers
-description: Gopen and Swan hold that readers bring consistent structural expectations to every sentence — old information belongs in the topic position, new emphasis belongs in the stress position (close), and every verb should name the real action. Apply those principles to any prose by rewriting it immediately in place — not proposing changes, but applying them.
+description: Williams holds that unclear prose almost always traces to the same failures — actors absent from subject position, actions buried in nouns, clutter crowding out meaning — and that controlling subjects, verbs, topics, stress, concision, shape, and elegance resolves most of what readers experience as difficulty. Apply his lessons from *Style: Lessons in Clarity and Grace* to any prose by rewriting it immediately in place — not proposing changes, but applying them. Use when the user wants prose rewritten for clarity, cohesion, concision, shape, or elegance.
 ---
 
 # Rewrite for Readers
 
-Reader expectations determine whether prose communicates or merely presents information; this skill locates violations of those expectations and rewrites the prose in place.
-
-Read [EXAMPLES.md](EXAMPLES.md) before starting.
+Williams holds that readers experience difficulty not from complex ideas but from prose that withholds the actor, buries the action, and saves nothing for the end; this skill locates those failures and rewrites the prose in place.
 
 ## Checklist
 
-- [ ] **Subject-Verb Gap** — "Readers expect a grammatical subject to be followed immediately by the verb." Find every sentence where more than a few words intervene between subject and verb; move the intervening material or split the sentence so the verb immediately follows its subject.
+### Clarity
 
-- [ ] **Stress Position** — "Place in the stress position the 'new information' you want the reader to emphasize." Find sentences whose stress position (point of syntactic closure) holds weak or anticlimactic material; restructure so the emphasis-worthy information arrives at that closure point.
+- [ ] **Actor-Subject** — The grammatical subject should be the real agent performing the action. Find every sentence where the subject is a concept, abstraction, or dummy pronoun while the real agent appears elsewhere; rewrite so the actor leads as subject.
 
-- [ ] **Topic Position** — "Place the person or thing whose 'story' a sentence is telling at the beginning of the sentence, in the topic position" and "place appropriate 'old information' (material already stated in the discourse) in the topic position for linkage backward and contextualization forward." Identify whose story each sentence tells; rewrite the opening so the story's subject leads and previously stated material connects backward.
+- [ ] **Nominalization** — Actions buried in noun forms (e.g., *investigation*, *failure*, *decision*) force weak *be*/*have* verbs into the slot where a real verb belongs. Find nominalizations derived from verbs and restore them as verbs (e.g., *investigation* → *investigate*, *failure* → *fail*).
 
-- [ ] **Topic Drift** — "The focus of the story constantly shifts" when successive topic positions introduce unlinked new information. Map the topic position of every sentence in each paragraph; when those positions reveal a changing cast rather than a continuous thread, move the recurrent old information to the front.
+### Cohesion and Coherence
 
-- [ ] **Logical Gap** — "When old information does not appear at all in a sentence, whether in the topic position or elsewhere, readers are left to construct the logical linkage by themselves." Find transitions where no old information bridges consecutive sentences; supply the connecting material the author left implicit.
+- [ ] **Topic Position** — Old information — what was just mentioned or what readers already know — belongs at the opening of a sentence, so readers connect backward before receiving what is new. Find sentences that open with unfamiliar material; move the connective old information to the front.
 
-- [ ] **Weak Verb** — "Articulate the action of every clause or sentence in its verb." Find sentences whose verbs are forms of *be*, *have*, or *seem* while the real action hides in a noun phrase; rewrite so the verb names the action.
+- [ ] **Topic Consistency** — Successive topic positions change subjects with each sentence, preventing readers from following a single thread. Map the opening subjects across the paragraph; if they are an unrelated cast, rewrite to establish one consistent topic thread.
 
-- [ ] **Stress Overload** — "A sentence is too long when it has more viable candidates for stress positions than there are stress positions available." Find sentences where two or more emphasis-worthy ideas compete for a single stress position; split the sentence or add a medial semicolon to give each idea its own closure point.
+- [ ] **Short Before Long** — Shorter, simpler information should precede longer, more complex information within a sentence. Find sentences that front-load complexity before the reader has a foothold; reorder so the simpler element leads and the complex element follows.
 
-- [ ] **Context Before Content** — "In general, provide context for your reader before asking that reader to consider anything new." Find sentences that open with new information before the reader has stable ground; reorder so context arrives first.
+- [ ] **Issue Sentence** — A paragraph's point should be locatable — either as the first sentence (point-first) or the last (point-last, when the paragraph deliberately builds to a conclusion). Find paragraphs whose point is buried in the middle or never stated; move it to the first or last sentence, preserving any intentional buildup.
 
-- [ ] **Apply and report** — Write all rewrites to the file (or replace the selected text), then report each change grouped by issue type — Subject-Verb Gap, Stress Position, Topic Position, Topic Drift, Logical Gap, Weak Verb, Stress Overload, Context Before Content — with location and a one-line description of what changed.
+### Emphasis
+
+- [ ] **Stress Position** — The most important information — the newest, most surprising, or most significant — belongs at the point of syntactic closure, where readers naturally pause and remember. Find sentences whose final position holds hedges, qualifications, or anticlimactic material; restructure so the emphasis-worthy idea arrives last.
+
+### Concision
+
+- [ ] **Redundancy** — Words that repeat meaning, add nothing, or pad a phrase to its longer equivalent waste the reader's attention. Remove redundant pairs (e.g., *each and every*, *first and foremost*), obvious qualifiers, meaningless intensifiers, and padded phrases (e.g., *due to the fact that* → *because*, *in the event that* → *if*).
+
+- [ ] **Metadiscourse** — Language that refers to the act of writing rather than to its substance — announcing what the sentence will do instead of doing it — adds length without adding meaning. Delete it (e.g., *It is important to note that*, *I will now discuss*, *As we can see*) and assert the content directly.
+
+### Shape
+
+- [ ] **Sentence Length** — A sentence is too long when readers lose the subject-verb connection or when it contains more emphasis-worthy ideas than it has stress positions. Split or restructure so each sentence can be parsed in working memory and each important idea has its own closure point.
+
+- [ ] **Branching** — Left-branching sentences (long qualification before the main clause) make readers hold complex material without context. Find sentences where a long subordinate clause precedes the main clause; unless the subordination is deliberate for emphasis, rewrite as right-branching (main clause first, qualification after).
+
+### Elegance
+
+- [ ] **Balance** — Coordinate elements that are parallel in meaning should be parallel in form. Find coordinate structures (*and*, *but*, *or*, *either/or*, *not only/but also*) whose elements are grammatically mismatched; rewrite so each element has the same grammatical form.
+
+- [ ] **Climax** — The longest, most complex element in a series should come last. Find series whose elements are ordered from longest to shortest; reverse or reorder so complexity builds to the end.
+
+- [ ] **Rhythm** — A sequence of sentences uniform in length and structure becomes monotonous; variety signals the relative weight of ideas. Find runs of sentences that are all short and choppy or all long and rolling; vary length and structure so the rhythm reflects the content's movement.
+
+- [ ] **Apply and report** — Write all rewrites to the file (or replace the selected text), then report each change grouped by issue type — Actor-Subject, Nominalization, Topic Position, Topic Consistency, Short Before Long, Issue Sentence, Stress Position, Redundancy, Metadiscourse, Sentence Length, Branching, Balance, Climax, Rhythm — with location and a one-line description of what changed.
