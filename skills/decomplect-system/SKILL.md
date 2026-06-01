@@ -11,13 +11,13 @@ Use these terms exactly in findings: **complect**, **simple**, **easy**, **const
 
 ## Checklist
 
-- [ ] **Easy mistaken for simple** — "construct justified on grounds of familiarity, convention, or framework support." Evaluate whether it is also simple — not complected — and not merely easy.
+- [ ] **Easy mistaken for simple** — "construct justified on grounds of familiarity, convention, or framework support." To test whether it is also simple, apply Hickey's independence criterion: *could these concerns ever change for different reasons — would any caller ever need one without the other?* If the bundled concerns co-vary by definition (all facets of a single boundary or invariant), that is cohesion, not complecting. Flag only when genuinely independent concerns have been forced to travel together.
 - [ ] **State** — "mutable variable or field whose value changes over time." Replace with values.
 - [ ] **Objects** — "class or object bundles state, identity, and value together." Separate into values and functions.
 - [ ] **Information hidden in objects** — "information passed or returned as a custom class rather than as a map, array, or set." Represent as a plain data structure.
 - [ ] **Methods** — "function defined on an object, coupling behaviour to state." Extract as a function that takes a value argument.
 - [ ] **Inheritance** — "type hierarchy couples concrete types together through shared base." Replace with polymorphism à la carte — protocols, type classes, or interfaces with no shared implementation.
-- [ ] **Switch / pattern matching on type** — "dispatch on a tag or type repeated across call sites." Replace with polymorphism à la carte.
+- [ ] **Switch / pattern matching on type** — "dispatch on a tag or type **repeated across call sites**." Replace with polymorphism à la carte.
 - [ ] **Mutable variables** — "variable reassigned over time rather than holding a value." Separate value from the change operation using a managed reference.
 - [ ] **Imperative loops** — "loop that entangles what to compute with how to iterate." Replace with set functions or declarative operations.
 - [ ] **Actors** — "actor couples the message (what) with its recipient (who)." Replace with a queue.
